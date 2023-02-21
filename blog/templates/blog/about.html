@@ -1,0 +1,99 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block page_area %}
+            <header class="py-5">
+                <div class="container px-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-xxl-6">
+                            <div class="text-center my-5">
+                                <h1 class="fw-bolder mb-3" style="font-style: italic;">About me</h1>
+                                <p class="lead fw-normal text-muted mb-4" style="font-size:1rem;">
+                                    안녕하세요, 저는 이재영입니다!<br/>
+                                    2022년 상반기, 짧은 시간동안 웹 디자인에 대한 경험을 해보고,<br/>
+                                    코딩이란 것을 더 자세히 배워보고 싶다는 생각이 들어서 부트캠프에 들어오게 되었습니다.<br/>
+                                    비록 관련 학과 전공자도 아니고, 인공지능에 대해서도 아는 게 하나도 없었지만,<br/> 
+                                    새로운 분야를 도전해보고 싶었습니다.
+                                </p>
+                                <a class="btn btn-primary btn-lg" href="#scroll-target">더보기</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- About section one-->
+            <section class="py-5 bg-light" id="scroll-target">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6"><img class="img-fluid rounded mb-5 mb-lg-0" src="{% static 'blog\want.jpg' %}" alt="..." /></div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bolder" style="font-style: italic;">Want</h2>
+                            <p class="lead fw-normal text-muted mb-0" style="font-size:1rem; line-height: 3vh;">
+                                이 과정을 통해 얻고싶었던 것은 프로그래밍에 대한 더 깊은 이해도와 코딩 실력 향상,
+                                인공지능 분야에서의 취업 등 여러가지를 기대했던 것 같습니다.
+                                프로그래밍을 배우면서 느낀 점은, 아직도 많이 모자라고, 배울 것이 정말 많다는 것이었습니다.
+                                내가 정말 취업을 할 수 있을까? 누군가에게 도움이 되고 필요로 하는 사람이 될 수 있을까? 하는 걱정도 많이 듭니다.
+                                하지만 저의 능력으로 누군가에게 도움을 줄 수 있는 개발자가 되고 싶습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About section two-->
+            <section class="py-5">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 align-items-center">
+                        <div class="col-lg-6 order-first order-lg-last"><img class="img-fluid rounded mb-5 mb-lg-0" src="{% static 'blog\changed.jpg' %}" alt="..." /></div>
+                        <div class="col-lg-6">
+                            <h2 class="fw-bolder" style="font-style: italic;">Changed</h2>
+                            <p class="lead fw-normal text-muted mb-0" style="font-size:1rem; line-height: 3vh;">
+                                지금까지 있었던 세 번의 미니프로젝트를 통해서 <br/>
+                                약간의 자신감을 얻기도 했습니다.<br/>
+                                막연한 걱정이 들면서도, 막상 프로젝트의 결과물을 보면<br/> 
+                                큰 성취감을 느꼈습니다!<br/>
+                                최종 프로젝트까지 열심히 파이팅하겠습니다😃
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Team members section-->
+            <!-- <section class="py-5 bg-light">
+                <div class="container px-5 my-5">
+                    <div class="text-center">
+                        <h2 class="fw-bolder">Our team</h2>
+                        <p class="lead fw-normal text-muted mb-5">Dedicated to quality and your success</p>
+                    </div>
+                    <div class="row gx-5 row-cols-1 row-cols-sm-2 row-cols-xl-4 justify-content-center">
+                        <div class="col mb-5 mb-5 mb-xl-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                                <h5 class="fw-bolder">Ibbie Eckart</h5>
+                                <div class="fst-italic text-muted">Founder &amp; CEO</div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 mb-5 mb-xl-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                                <h5 class="fw-bolder">Arden Vasek</h5>
+                                <div class="fst-italic text-muted">CFO</div>
+                            </div>
+                        </div>
+                        <div class="col mb-5 mb-5 mb-sm-0">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                                <h5 class="fw-bolder">Toribio Nerthus</h5>
+                                <div class="fst-italic text-muted">Operations Manager</div>
+                            </div>
+                        </div>
+                        <div class="col mb-5">
+                            <div class="text-center">
+                                <img class="img-fluid rounded-circle mb-4 px-4" src="https://dummyimage.com/150x150/ced4da/6c757d" alt="..." />
+                                <h5 class="fw-bolder">Malvina Cilla</h5>
+                                <div class="fst-italic text-muted">CTO</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section> -->
+        </main>
+{% endblock %}
